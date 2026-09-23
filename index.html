@@ -3,201 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Henrique | Desenvolvedor & Técnico em TI</title>
+    <title>Pedro Henrique Pereira dos Santos | Desenvolvedor e Técnico em TI</title>
+    <meta name="description" content="Portfólio de Pedro Henrique Pereira dos Santos, desenvolvedor e técnico em TI pelo UNASP SP. HTML, CSS, JavaScript, C, C++ e Java.">
+    <meta name="theme-color" content="#070b1f">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23070b1f'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%23ffc46b' opacity='.18'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='%23e8ecff' text-anchor='middle'%3EPH%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
 
-    <nav>
-        <div class="logo">&lt;PedroHenrique /&gt;</div>
+    <a class="pular" href="#sobre">Pular para o conteúdo</a>
+    <div class="progresso" aria-hidden="true"></div>
+    <div class="luz-pagina" aria-hidden="true"></div>
+    <div class="grao" aria-hidden="true"></div>
+
+    <nav class="nav" aria-label="Principal">
+        <a href="#inicio" class="nav-marca" aria-label="Pedro Henrique, início">
+            <span class="nav-ponto" aria-hidden="true"></span>PH
+        </a>
         <ul class="nav-links">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#sobre">Sobre</a></li>
             <li><a href="#formacao">Formação</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li class="nav-indicador" aria-hidden="true"></li>
         </ul>
+        <a href="#contato" class="botao botao-luz botao-nav">Contato</a>
     </nav>
 
-    <header id="inicio">
-        <div class="hero-content">
-            <span class="badge">Desenvolvedor & Técnico em TI</span>
-            <h1>Pedro Henrique Pereira dos Santos</h1>
-            <p class="subtitle"><span id="typewriter"></span></p>
-            <div class="hero-btns">
-                <a href="https://www.linkedin.com/in/pedro-henrique-pereira-dos-santos-7a0835398/" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-linkedin"></i> Conectar no LinkedIn
-                </a>
-                <a href="#projetos" class="btn btn-secondary">Ver Projetos</a>
+    <!-- Palco: o refletor acende sobre o nome -->
+    <header class="palco" id="inicio">
+        <canvas class="poeira" aria-hidden="true"></canvas>
+        <div class="feixe" aria-hidden="true"></div>
+        <div class="chao" aria-hidden="true"></div>
+
+        <div class="palco-conteudo">
+            <p class="disponivel entra"><span class="ponto" aria-hidden="true"></span>Disponível para o primeiro emprego em TI</p>
+            <h1 class="nome" data-letras>
+                <span class="linha">Pedro Henrique</span>
+                <span class="linha fina">Pereira dos Santos</span>
+            </h1>
+            <p class="palco-frase entra">Desenvolvedor e técnico em TI pelo UNASP SP. Escrevo código com lógica e apresento ideias com a presença que aprendi no palco.</p>
+            <div class="acoes entra">
+                <a href="#contato" class="botao botao-luz" data-ima>Falar comigo</a>
+                <a href="#projetos" class="botao botao-vidro" data-ima>Ver projetos</a>
             </div>
         </div>
+
+        <a href="#sobre" class="rolar entra">Role para conhecer<span class="rolar-trilho" aria-hidden="true"></span></a>
     </header>
 
-    <section id="sobre" class="fade-in">
-        <div class="section-title">
-            <h2>Sobre Mim</h2>
-            <div class="line"></div>
+    <!-- Faixa de habilidades -->
+    <div class="faixa" aria-label="Tecnologias e habilidades">
+        <div class="faixa-trilho">
+            <ul>
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>C</li><li>C++</li><li>Java</li><li>Inglês avançado</li><li>Oratória</li><li>Trabalho em equipe</li>
+            </ul>
+            <ul aria-hidden="true">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>C</li><li>C++</li><li>Java</li><li>Inglês avançado</li><li>Oratória</li><li>Trabalho em equipe</li>
+            </ul>
         </div>
-        <div class="sobre-container">
-            <div class="sobre-text">
-                <p>
-                    Tenho 18 anos e sou apaixonado por tecnologia, programação e resolução de problemas. Atualmente, estou concluindo o Ensino Médio integrado ao curso Técnico em Tecnologia da Informação no <strong>UNASP SP</strong>.
-                </p>
-                <p>
-                    Minha jornada combina lógica de programação estruturada com uma forte capacidade de comunicação e trabalho em equipe. Além da bagagem técnica em exatas e computação, desenvolvi minhas habilidades interpessoais e de expressão pública através do teatro na tradicional escola <strong>Macunaíma</strong>, e alcancei fluência na língua inglesa pelo <strong>CNA</strong>, obtendo aprovação oficial no teste de <strong>Cambridge</strong>.
-                </p>
-                <p>
-                    Sou um profissional de aprendizado rápido, dedicado e pronto para encarar desafios no mercado de tecnologia e desenvolvimento de software!
-                </p>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    <section id="formacao" class="fade-in bg-alt">
-        <div class="section-title">
-            <h2>Formação & Certificações</h2>
-            <div class="line"></div>
-        </div>
-        <div class="timeline">
-            
-            <div class="timeline-card">
-                <div class="card-header">
-                    <i class="fas fa-graduation-cap"></i>
-                    <div>
-                        <h3>Ensino Médio + Técnico em TI</h3>
-                        <span class="institution">UNASP SP</span>
+    <main>
+
+        <section class="secao" id="sobre" aria-labelledby="sobre-titulo">
+            <div class="secao-topo">
+                <h2 class="titulo" id="sobre-titulo"><span>Sobre mim</span></h2>
+            </div>
+
+            <p class="acender">Tenho 18 anos e sou apaixonado por tecnologia, programação e resolução de problemas. Uno a lógica do código à presença de palco que aprendi no teatro.</p>
+
+            <div class="sobre-baixo">
+                <div class="sobre-texto" data-revelar>
+                    <p>Estou concluindo o Ensino Médio integrado ao curso Técnico em Tecnologia da Informação no UNASP SP. Desenvolvi a fala em público e a escuta na Escola de Teatro Macunaíma, e cheguei à fluência em inglês pelo CNA, com aprovação no exame de Cambridge.</p>
+                    <p>Aprendo rápido, me dedico ao que faço e estou pronto para os desafios do mercado de tecnologia e desenvolvimento de software.</p>
+                </div>
+
+                <dl class="fatos" data-brilho>
+                    <div class="brilho" data-revelar style="--d: 0">
+                        <dt>Idade</dt>
+                        <dd>18 anos</dd>
                     </div>
-                </div>
-                <p>Formação técnica focada em desenvolvimento de software, estrutura de dados, redes e criação de aplicações web modernas com HTML, CSS e JavaScript.</p>
-            </div>
-
-            <div class="timeline-card">
-                <div class="card-header">
-                    <i class="fas fa-language"></i>
-                    <div>
-                        <h3>Master in English 2 (CNA)</h3>
-                        <span class="institution">Certificado de Proeficiência Cambridge</span>
+                    <div class="brilho" data-revelar style="--d: 1">
+                        <dt>Técnico em TI</dt>
+                        <dd>UNASP SP</dd>
                     </div>
-                </div>
-                <p>Conclusão do curso avançado de inglês definitivo com aprovação internacional nos exames de Cambridge, garantindo comunicação fluente em ambientes globais.</p>
-            </div>
-
-            <div class="timeline-card">
-                <div class="card-header">
-                    <i class="fas fa-theater-masks"></i>
-                    <div>
-                        <h3>Teatro & Artes Cênicas</h3>
-                        <span class="institution">Escola de Teatro Macunaíma</span>
+                    <div class="brilho" data-revelar style="--d: 2">
+                        <dt>Inglês avançado</dt>
+                        <dd>Cambridge</dd>
                     </div>
+                    <div class="brilho" data-revelar style="--d: 3">
+                        <dt>Teatro</dt>
+                        <dd>Macunaíma</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="secao" id="formacao" aria-labelledby="formacao-titulo">
+            <div class="secao-topo">
+                <h2 class="titulo" id="formacao-titulo"><span>Formação</span></h2>
+                <p class="secao-intro" data-revelar>Três escolas, três linguagens: código, inglês e palco.</p>
+            </div>
+
+            <div class="trilha-caixa">
+            <span class="trilha-luz" aria-hidden="true"></span>
+            <ol class="trilha" role="list">
+                <li>
+                    <span class="trilha-ponto" aria-hidden="true"></span>
+                    <p class="trilha-area">Tecnologia</p>
+                    <h3>UNASP SP</h3>
+                    <p class="trilha-curso">Ensino Médio integrado ao Técnico em TI</p>
+                    <p class="trilha-texto">Desenvolvimento de software, estrutura de dados, redes e aplicações web modernas com HTML, CSS e JavaScript.</p>
+                </li>
+                <li>
+                    <span class="trilha-ponto" aria-hidden="true"></span>
+                    <p class="trilha-area">Idiomas</p>
+                    <h3>CNA</h3>
+                    <p class="trilha-curso">Master in English 2, aprovado em Cambridge</p>
+                    <p class="trilha-texto">Curso avançado de inglês concluído com aprovação no exame internacional de Cambridge. Comunicação fluente com equipes e clientes de qualquer lugar.</p>
+                </li>
+                <li>
+                    <span class="trilha-ponto" aria-hidden="true"></span>
+                    <p class="trilha-area">Artes cênicas</p>
+                    <h3>Macunaíma</h3>
+                    <p class="trilha-curso">Escola de Teatro Macunaíma</p>
+                    <p class="trilha-texto">Oratória, inteligência emocional, escuta ativa e facilidade de expressão, desenvolvidas em grandes peças e adaptações.</p>
+                </li>
+            </ol>
+            </div>
+        </section>
+
+        <section class="secao" id="habilidades" aria-labelledby="habilidades-titulo">
+            <div class="secao-topo">
+                <h2 class="titulo" id="habilidades-titulo"><span>Habilidades</span></h2>
+                <p class="secao-intro" data-revelar>As ferramentas que uso para transformar ideia em código.</p>
+            </div>
+
+            <ul class="linguagens" data-brilho role="list">
+                <li class="brilho" data-revelar style="--d: 0"><span class="ling-nome">HTML5</span><span class="ling-uso">Estrutura e semântica de páginas</span></li>
+                <li class="brilho" data-revelar style="--d: 1"><span class="ling-nome">CSS3</span><span class="ling-uso">Layout, responsividade e animação</span></li>
+                <li class="brilho" data-revelar style="--d: 2"><span class="ling-nome">JavaScript</span><span class="ling-uso">Interatividade e lógica no navegador</span></li>
+                <li class="brilho" data-revelar style="--d: 3"><span class="ling-nome">C</span><span class="ling-uso">Lógica estruturada e memória</span></li>
+                <li class="brilho" data-revelar style="--d: 4"><span class="ling-nome">C++</span><span class="ling-uso">Estruturas de dados e desempenho</span></li>
+                <li class="brilho" data-revelar style="--d: 5"><span class="ling-nome">Java</span><span class="ling-uso">Orientação a objetos</span></li>
+            </ul>
+
+            <div class="competencias">
+                <div data-revelar>
+                    <h3>Idiomas e comunicação</h3>
+                    <ul class="pilulas">
+                        <li>Português nativo</li>
+                        <li>Inglês avançado (Cambridge)</li>
+                        <li>Oratória e apresentação</li>
+                    </ul>
                 </div>
-                <p>Desenvolvimento de oratória, inteligência emocional, escuta ativa e facilidade de expressão através da participação em grandes peças e adaptações culturais.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="habilidades" class="fade-in">
-        <div class="section-title">
-            <h2>Arsenal Tecnológico & Soft Skills</h2>
-            <div class="line"></div>
-        </div>
-
-        <div class="skills-grid">
-            
-            <div class="skill-category">
-                <h3><i class="fas fa-code"></i> Desenvolvimento & Linguagens</h3>
-                <div class="tags">
-                    <span class="tag">HTML5</span>
-                    <span class="tag">CSS3</span>
-                    <span class="tag">JavaScript (JS)</span>
-                    <span class="tag">C</span>
-                    <span class="tag">C++</span>
-                    <span class="tag">Java</span>
+                <div data-revelar style="--d: 1">
+                    <h3>Como eu trabalho</h3>
+                    <ul class="pilulas">
+                        <li>Aprendizado rápido</li>
+                        <li>Trabalho em equipe</li>
+                        <li>Resolução de problemas</li>
+                        <li>Pensamento lógico</li>
+                    </ul>
                 </div>
             </div>
+        </section>
 
-            <div class="skill-category">
-                <h3><i class="fas fa-globe"></i> Idiomas & Comunicação</h3>
-                <div class="tags">
-                    <span class="tag">Português (Nativo)</span>
-                    <span class="tag">Inglês (Avançado / Cambridge)</span>
-                    <span class="tag">Oratória e Apresentação</span>
-                </div>
+        <section class="secao" id="projetos" aria-labelledby="projetos-titulo">
+            <div class="secao-topo">
+                <h2 class="titulo" id="projetos-titulo"><span>Projetos</span></h2>
+                <p class="secao-intro" data-revelar>Aplicações web com foco em usabilidade, design cuidadoso e código limpo.</p>
             </div>
 
-            <div class="skill-category">
-                <h3><i class="fas fa-brain"></i> Destaques & Soft Skills</h3>
-                <div class="tags">
-                    <span class="tag">Rápido Aprendizado</span>
-                    <span class="tag">Trabalho em Equipe</span>
-                    <span class="tag">Resolução de Problemas</span>
-                    <span class="tag">Pensamento Lógico</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="projetos" class="fade-in bg-alt">
-        <div class="section-title">
-            <h2>Projetos & Portfólio</h2>
-            <div class="line"></div>
-        </div>
-        <p class="section-desc">
-            Desenvolvo aplicações web focadas em usabilidade, design moderno e código limpo. Confira meus repositórios e projetos publicados:
-        </p>
-
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon"><i class="fab fa-github"></i></div>
-                <h3>Repositórios no GitHub</h3>
-                <p>Veja meus códigos-fonte, exercícios acadêmicos do UNASP e projetos em C, C++, Java e Web.</p>
-                <a href="https://github.com" target="_blank" class="project-link">Acessar GitHub <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-rocket"></i></div>
-                <h3>Aplicações na Vercel</h3>
-                <p>Explore minhas aplicações web publicadas e em pleno funcionamento criadas com HTML, CSS e JavaScript.</p>
-                <a href="https://vercel.com" target="_blank" class="project-link">Ver Projetos Vercel <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contato" class="fade-in">
-        <div class="footer-content">
-            <h2>Vamos Trabalhar Juntos?</h2>
-            <p>Estou em busca da minha primeira oportunidade profissional para aplicar todo o conhecimento técnico e colaborativo que venho construindo.</p>
-            
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/pedro-henrique-pereira-dos-santos-7a0835398/" target="_blank" class="contact-card primary-contact">
-                    <i class="fab fa-linkedin-in"></i>
-                    <div>
-                        <span>Conecte-se Comigo</span>
-                        <strong>Pedro Henrique Pereira dos Santos</strong>
+            <div class="projetos" data-brilho>
+                <a class="projeto brilho" href="https://github.com" target="_blank" rel="noopener" data-inclinar data-revelar>
+                    <div class="projeto-visual grade-git" aria-hidden="true"></div>
+                    <div class="projeto-texto">
+                        <p class="projeto-onde">GitHub</p>
+                        <h3>Repositórios e código-fonte</h3>
+                        <p>Exercícios do UNASP e projetos em C, C++, Java e web.</p>
+                        <span class="projeto-acao">Abrir repositórios</span>
                     </div>
                 </a>
-
-                <a href="mailto:pedrohenriquepsantos813@gmail.com" class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <span>Enviar um E-mail</span>
-                        <strong>pedrohenriquepsantos813@gmail.com</strong>
+                <a class="projeto brilho" href="https://vercel.com" target="_blank" rel="noopener" data-inclinar data-revelar style="--d: 1">
+                    <div class="projeto-visual navegador" aria-hidden="true">
+                        <div class="navegador-barra"><i></i><i></i><i></i><span>vercel.app</span><b>No ar</b></div>
+                        <div class="navegador-tela">
+                            <span class="esq esq-titulo"></span>
+                            <span class="esq"></span>
+                            <span class="esq curto"></span>
+                            <div class="navegador-blocos"><span></span><span></span><span></span></div>
+                        </div>
                     </div>
-                </a>
-
-                <a href="tel:11979854494" class="contact-card">
-                    <i class="fas fa-phone-alt"></i>
-                    <div>
-                        <span>Telefone / WhatsApp</span>
-                        <strong>(11) 97985-4494</strong>
+                    <div class="projeto-texto">
+                        <p class="projeto-onde">Vercel</p>
+                        <h3>Aplicações publicadas</h3>
+                        <p>Sites e aplicações no ar, feitos com HTML, CSS e JavaScript.</p>
+                        <span class="projeto-acao">Ver aplicações</span>
                     </div>
                 </a>
             </div>
+        </section>
 
-            <p class="copy">© 2026 Pedro Henrique Pereira dos Santos. Desenvolvido com HTML, CSS e JavaScript.</p>
+    </main>
+
+    <footer class="contato" id="contato" aria-labelledby="contato-titulo">
+        <div class="feixe feixe-contato" aria-hidden="true"></div>
+
+        <div class="contato-conteudo">
+            <h2 class="titulo titulo-grande" id="contato-titulo"><span>Vamos trabalhar</span><span>juntos?</span></h2>
+            <p class="contato-frase" data-revelar>Estou em busca da minha primeira oportunidade para aplicar o que venho construindo em tecnologia e em equipe.</p>
+
+            <div class="contato-email" data-revelar>
+                <a href="mailto:pedrohenriquepsantos813@gmail.com" class="email">pedrohenriquepsantos813@gmail.com</a>
+                <button type="button" class="botao botao-vidro copiar" data-copiar="pedrohenriquepsantos813@gmail.com" data-ima>Copiar e-mail</button>
+                <span class="copiar-aviso" role="status" aria-live="polite"></span>
+            </div>
+
+            <ul class="canais" data-revelar>
+                <li>
+                    <a href="https://wa.me/5511979854494" target="_blank" rel="noopener">
+                        <span class="canal-nome">WhatsApp</span>
+                        <span class="canal-valor">(11) 97985-4494</span>
+                        <span class="canal-seta" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/pedro-henrique-pereira-dos-santos-7a0835398/" target="_blank" rel="noopener">
+                        <span class="canal-nome">LinkedIn</span>
+                        <span class="canal-valor">Pedro Henrique Pereira dos Santos</span>
+                        <span class="canal-seta" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="rodape">
+                <p>© 2026 Pedro Henrique Pereira dos Santos</p>
+                <a href="#inicio">Voltar ao topo</a>
+            </div>
         </div>
     </footer>
 
